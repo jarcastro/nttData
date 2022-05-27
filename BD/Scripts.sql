@@ -1,3 +1,8 @@
+create sequence public.afiliado_id_seq
+minvalue 1
+maxvalue 99999999999
+increment by 1;
+
 CREATE TABLE IF NOT EXISTS afiliado
 (
     id integer NOT NULL default nextval('afiliado_id_seq'),
